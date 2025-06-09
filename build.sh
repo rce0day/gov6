@@ -1,9 +1,5 @@
 #!/bin/bash
-
-# simple build script for IPv6 proxy
-
 echo "Updating dependencies..."
-# download all required dependencies
 go mod tidy
 
 if [ $? -ne 0 ]; then
